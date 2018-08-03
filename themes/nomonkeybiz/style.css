@@ -468,7 +468,7 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
@@ -666,3 +666,46 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-header {
+  background: #fff;
+  height: 85px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0; }
+
+.site-branding {
+  height: 60px; }
+
+.header-logo {
+  background-image: url(../../assets/nmb-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 60px; }
+  @media only screen and (min-width: 1024px) {
+    .header-logo {
+      width: 80px;
+      height: 70px; } }
+
+.header-text {
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .header-text {
+      display: block; } }
+
+.responsive-menu-button {
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+  .responsive-menu-button:active, .responsive-menu-button:hover, .responsive-menu-button:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+#responsive-menu-wrapper {
+  margin-top: 6rem;
+  text-transform: uppercase; }

@@ -1,0 +1,44 @@
+.site-header {
+    background: #fff;
+    height: 85px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.site-branding {
+    height: 60px;
+}
+
+.header-logo {
+    background-image: url(../../assets/nmb-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 60px;
+    @include media($desktop) {
+        width: 80px;
+        height: 70px;
+    }
+}
+
+.header-text {
+    display: none;
+    @include media($desktop) {
+        display: block;
+    }
+}
+
+.responsive-menu-button {
+    box-shadow: none;
+    &:active, &:hover, &:focus {
+        box-shadow: none;
+    }
+}
+
+#responsive-menu-wrapper {
+    margin-top: 6rem;
+    text-transform: uppercase;
+}
