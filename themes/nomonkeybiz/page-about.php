@@ -11,15 +11,20 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
             <section class="banner-container">
-                <h2>About Us</h2>
-                <div class="banner-content">
-                    <?php while ( have_posts() ) : the_post(); ?>
-                        <?php the_content(); ?>
-                    <?php endwhile; // End of the loop. ?>
+                <img src="<?php echo the_field("banner_image"); ?>" alt="banner image">
+                <div class="banner-wrapper">
+                    <div class="banner-title">
+                        <h2><span>About Us</span></h2>
+                    </div>
+                    <div class="banner-content">
+                        <?php while ( have_posts() ) : the_post(); ?>
+                            <?php the_content(); ?>
+                        <?php endwhile; // End of the loop. ?>
+                    </div>
                 </div>
             </section>
 
-            <section class="about-info-container">
+            <section class="about-info-container l-container">
                 <?php $company_features = CFS()->get( 'company_features' );
                 $guarantee_content = CFS()->get( 'guarantee_content' );
                 foreach( $company_features as $feature ): ?>
@@ -35,9 +40,11 @@ get_header(); ?>
                 <?php endforeach; wp_reset_postdata(); ?>
             </section>
 
-            <section class="guarantee-container">
-                <h3>Work Safe Guarantee</h3>
-                <p><?php echo wp_kses_post($guarantee_content);?></p>
+            <section class="guarantee-container z-container">
+                <div class="section-title">
+                    <p><span>Work Safety Guarantee</span></p>
+                </div>
+                <div class="guarantee-content"><?php echo wp_kses_post($guarantee_content);?></div>
             </section>
 
 		</main><!-- #main -->

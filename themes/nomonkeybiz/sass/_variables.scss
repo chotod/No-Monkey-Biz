@@ -21,11 +21,19 @@ $color__link-hover: midnightblue;
 
 // Typography
 
-$font__main: sans-serif;
+$font__banner-titles: 'roboto-bold', 'arial', sans-serif;
+$font__section-titles: 'barlow-medium', 'arial', sans-serif;
+$font__main: 'barlow-light', 'arial', sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+//Colours
+$color__accent-blue: #048bd1;
+$color__accent-dark: #242323;
+$color__accent-grey: #A0A09F;
+$color__accent-beige: #E6E0C3;
 
 //Queries
 $tablet: 600px;

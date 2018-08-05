@@ -16,4 +16,36 @@
 	@media only screen and (min-width: $width) {
 	  @content;
 	}
-  }
+}
+
+//Absolute Horizontal Centering
+@mixin absolute-horizontal-center {
+	position: absolute;
+    left: 50%;  
+    transform: translateX(-50%);
+}
+
+//Title Underline Styl
+@mixin title-underline($color) {
+	border-bottom: 2px solid $color;
+	padding-bottom: 1.2rem;
+}
+
+//Blue Titles
+@mixin title-blue {
+	text-transform: uppercase;
+	color: $color__accent-blue;
+}
+
+//Button Style
+@mixin button-style {
+	margin: 0 auto;
+	padding: 0.5rem 1.4rem;
+	border-radius: 20px;
+	text-decoration: none;
+	&:hover {
+		border-color: $color__accent-blue;
+		background: $color__accent-blue;
+		color: #FFF;
+	}
+}

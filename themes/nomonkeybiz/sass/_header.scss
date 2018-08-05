@@ -6,19 +6,24 @@
     align-items: center;
     position: fixed;
     top: 0;
+    z-index: 99999;
 }
 
 .site-branding {
-    height: 60px;
+    height: 50px;
+    margin-left: 0.5rem;
+    @include media($tablet) {
+        height: 60px;   
+    }
 }
 
 .header-logo {
     background-image: url(../../assets/nmb-logo.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 70px;
-    height: 60px;
-    @include media($desktop) {
+    width: 60px;
+    height: 50px;
+    @include media($tablet) {
         width: 80px;
         height: 70px;
     }
@@ -39,6 +44,6 @@
 }
 
 #responsive-menu-wrapper {
-    margin-top: 6rem;
+    margin-top: 8rem !important;
     text-transform: uppercase;
 }
