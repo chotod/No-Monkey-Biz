@@ -29,11 +29,11 @@ get_header(); ?>
                 $guarantee_content = CFS()->get( 'guarantee_content' );
                 foreach( $company_features as $feature ): ?>
                     <div>
-                        <div class="feature-icon">
+                        <div class="about-feature-icon">
                             <?php echo $feature['feature_icon'];?>
                         </div>
-                        <div class="feature-content">
-                            <p><?php echo esc_html($feature['feature_header']);?></p>
+                        <div class="about-feature-content">
+                            <p class="blue-heading"><?php echo esc_html($feature['feature_header']);?></p>
                             <p><?php echo wp_kses($feature['feature_description'], $allowed_html); ?></p>
                         </div>
                     </div>

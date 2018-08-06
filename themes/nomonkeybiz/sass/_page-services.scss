@@ -1,0 +1,38 @@
+.services-container {
+    >div {
+        margin-bottom: 4rem;
+    }
+    >div:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.services-banner-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    >div {
+        width: 45%;
+        margin-bottom: 2.5rem;
+    }
+    i {
+        font-size: 2.5rem;
+    }
+}
+
+.service-image-wrapper {
+    height: 250px;
+    margin-bottom: 2.5rem;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;  
+    }
+}
+
+.service-writeup {
+    text-align: justify;
+    p {
+        margin-bottom: 0;
+    }
+}

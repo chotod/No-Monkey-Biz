@@ -679,6 +679,11 @@ a {
   .section-title p {
     margin-top: 0; }
 
+.blue-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #048bd1; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -885,7 +890,7 @@ object {
   .about-info-container > div:last-of-type {
     margin-bottom: 0; }
 
-.feature-icon {
+.about-feature-icon {
   border: 7px solid #048bd1;
   border-radius: 50%;
   height: 75px;
@@ -900,14 +905,9 @@ object {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto; }
-  .feature-icon i {
+  .about-feature-icon i {
     font-size: 2.5rem;
     color: #048bd1; }
-
-.feature-content p:first-of-type {
-  font-size: 20px;
-  font-weight: bold;
-  color: #048bd1; }
 
 .guarantee-container .section-title p {
   color: #048bd1; }
@@ -918,6 +918,41 @@ object {
 
 .guarantee-content {
   text-align: justify; }
+
+.services-container > div {
+  margin-bottom: 4rem; }
+
+.services-container > div:last-of-type {
+  margin-bottom: 0; }
+
+.services-banner-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .services-banner-content > div {
+    width: 45%;
+    margin-bottom: 2.5rem; }
+  .services-banner-content i {
+    font-size: 2.5rem; }
+
+.service-image-wrapper {
+  height: 250px;
+  margin-bottom: 2.5rem; }
+  .service-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.service-writeup {
+  text-align: justify; }
+  .service-writeup p {
+    margin-bottom: 0; }
 
 .footer-top {
   background: #048bd1;
