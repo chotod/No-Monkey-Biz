@@ -1,0 +1,20 @@
+.testimonials-container {
+    >div {
+        margin-bottom: 3rem;
+        >p {
+            margin: 0;
+        }
+    }
+    >div:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.testimonial-writeup {
+    font-style: italic;
+    span {
+        font-family: $font__banner-titles;
+        font-style: normal;
+        font-size: 1.3rem;
+    }
+}

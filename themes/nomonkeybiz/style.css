@@ -954,6 +954,21 @@ object {
   .service-writeup p {
     margin-bottom: 0; }
 
+.testimonials-container > div {
+  margin-bottom: 3rem; }
+  .testimonials-container > div > p {
+    margin: 0; }
+
+.testimonials-container > div:last-of-type {
+  margin-bottom: 0; }
+
+.testimonial-writeup {
+  font-style: italic; }
+  .testimonial-writeup span {
+    font-family: "roboto-bold", "arial", sans-serif;
+    font-style: normal;
+    font-size: 1.3rem; }
+
 .footer-top {
   background: #048bd1;
   padding: 1rem 2rem;

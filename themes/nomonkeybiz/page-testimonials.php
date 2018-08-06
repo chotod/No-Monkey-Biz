@@ -11,22 +11,27 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
            <section class="banner-container">
-                <h2>Testimonials</h2>
-                <div class="banner-content">
-                    <?php while ( have_posts() ) : the_post(); ?>
-                        <?php the_content(); ?>
-                    <?php endwhile; // End of the loop. ?>
+                <img src="<?php echo the_field("banner_image"); ?>" alt="banner image">
+                <div class="banner-wrapper">
+                    <div class="banner-title">
+                        <h2><span>Testimonials</span></h2>
+                    </div>
+                    <div class="banner-content">
+                        <?php while ( have_posts() ) : the_post(); ?>
+                            <?php the_content(); ?>
+                        <?php endwhile; // End of the loop. ?>
+                    </div>
                 </div>
             </section>
 
-            <section class="testimonials-container">
+            <section class="testimonials-container l-container">
                 <?php $testimonials_list = CFS()->get( 'testimonials_list' );
                 if(!empty($testimonials_list)) :
                     foreach( $testimonials_list as $testimonial ): ?>
                         <div>
-                            <p><span>"</span><?php echo wp_kses($testimonial['testimonial_content'], $allowed_html); ?><span>"</span></p>
-                            <p><?php echo esc_html($testimonial['testimonial_name']);?></p>
-                            <p><?php echo esc_html($testimonial['testimonial_credentials']);?></p>
+                            <p class="testimonial-writeup"><span>"</span><?php echo wp_kses($testimonial['testimonial_content'], $allowed_html); ?><span>"</span></p>
+                            <p class="testimonial-name"><?php echo esc_html($testimonial['testimonial_name']);?></p>
+                            <p class="testimonial-credentials"><?php echo esc_html($testimonial['testimonial_credentials']);?></p>
                         </div>
                     <?php endforeach; wp_reset_postdata();
                 endif; ?>
