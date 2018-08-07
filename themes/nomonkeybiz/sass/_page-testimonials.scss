@@ -13,8 +13,17 @@
 .testimonial-writeup {
     font-style: italic;
     span {
-        font-family: $font__banner-titles;
         font-style: normal;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        color: $color__accent-blue;
     }
+}
+
+.testimonial-name {
+    color: $color__accent-blue;
+}
+
+.testimonial-name, .testimonial-credentials {
+    font-size: 14px;
+    font-weight: bold;
 }

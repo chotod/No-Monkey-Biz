@@ -31,12 +31,6 @@
 	padding-bottom: 1.2rem;
 }
 
-//Blue Titles
-@mixin title-blue {
-	text-transform: uppercase;
-	color: $color__accent-blue;
-}
-
 //Button Style
 @mixin button-style {
 	margin: 0 auto;

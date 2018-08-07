@@ -28,14 +28,14 @@ get_header(); ?>
                         <div class="commercial-icon service-icon">
                             <i class="far fa-building fa-7x"></i>
                         </div>
-                        <p>Commercial</p>
+                        <p class="blue-heading">Commercial</p>
                         <p><?php echo the_field('commercial_info'); ?></p>
                     </div>
                     <div class="home-service-icon-wrapper residential-wrapper">
                         <div class="residential-icon service-icon">
                             <i class="fas fa-home fa-7x"></i>
                         </div>
-                        <p>Residential</p>
+                        <p class="blue-heading">Residential</p>
                         <p><?php echo the_field('residential_info'); ?></p>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ get_header(); ?>
                         <div class="section-title">
                             <p><span>About Us</span></p>
                         </div>
-                        <div><?php echo the_field('about_description'); ?></div>
+                        <div class="home-about-info-wrapper"><?php echo the_field('about_description'); ?></div>
                         <a href="<?php the_field('about_link'); ?>">Read More</a>
                     </div>
                     <div class="about-parallax">

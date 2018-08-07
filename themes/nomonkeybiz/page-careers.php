@@ -11,17 +11,22 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
             <section class="banner-container">
-                <h2>Careers</h2>
-                <div class="banner-content">
-                    <?php while ( have_posts() ) : the_post(); ?>
-                        <?php the_content(); ?>
-                    <?php endwhile; // End of the loop. ?>
+                <img src="<?php echo the_field("banner_image"); ?>" alt="banner image">
+                <div class="banner-wrapper">
+                    <div class="banner-title">
+                        <h2><span>Careers</span></h2>
+                    </div>
+                    <div class="banner-content">
+                        <?php while ( have_posts() ) : the_post(); ?>
+                            <?php the_content(); ?>
+                        <?php endwhile; // End of the loop. ?>
+                    </div>
                 </div>
             </section>
 
-            <section class="careers-container">
-                <?php echo the_field('application_description'); ?>
-                <?php echo the_field('application_form'); ?>
+            <section class="careers-container l-container">
+                <p class="application-description"><?php echo the_field('application_description'); ?></p>
+                <div class="application-form-wrapper"><?php echo the_field('application_form'); ?></div>
             </section>
 
 		</main><!-- #main -->

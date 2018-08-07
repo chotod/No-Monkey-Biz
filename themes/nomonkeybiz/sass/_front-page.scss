@@ -31,16 +31,22 @@
         margin-bottom: 2.5rem;
         color: $color__accent-blue;
     }
-    p:first-of-type {
-        @include title-blue;
-        font-family: 'barlow-light';
-        font-size: 20px;
-        font-weight: bold;
+    .blue-heading {
+        text-transform: uppercase;
+    }
+}
+
+.about-wrapper {
+    @include media($tablet) {
+        display: flex;
     }
 }
 
 .home-about-info-container, .about-parallax {
     height: 450px;
+    @include media($tablet) {
+        width: 50%;
+    }
 }
 
 .home-about-info-container {
@@ -56,15 +62,16 @@
             @include title-underline($color__accent-blue);
         }
     }
-    div:nth-of-type(2) {
-        width: 310px;
-        margin: 0 auto;
-    }
     a {
        @include button-style;
        color: #FFF;
        border: 1px solid #FFF;
     }
+}
+
+.home-about-info-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .about-parallax {

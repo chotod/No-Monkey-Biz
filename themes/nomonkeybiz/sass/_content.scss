@@ -51,6 +51,9 @@
 /* Containers */
 .l-container {
 	padding: 60px 30px;
+	@include media($tablet) {
+		padding: 80px 30px;
+	}
 }
 
 .r-container {
@@ -79,8 +82,11 @@
 
 .banner-wrapper {
 	@include absolute-horizontal-center;
-	top: 8rem;
+	top: 10rem;
 	width: 85%;
+	@include media($tablet) {
+		max-width: 750px;
+	}
 }
 
 .banner-title {
@@ -97,6 +103,9 @@
 .banner-content {
 	text-align: center;
 	color: #FFF;
+	@include media($tablet) {
+		font-size:	1.1rem;
+	}
 }
 
 .section-title {
@@ -114,4 +123,38 @@
 	font-size: 20px;
     font-weight: bold;
     color: $color__accent-blue;
+}
+
+/* Forms */
+
+.application-form-wrapper, .contact-form-container {
+    input, textarea {
+        border: 1px solid $color__accent-blue;
+		border-radius: 0;
+		&:focus {
+			outline: none;
+		}
+    }
+    input[type=file] {
+        width: 100%;
+    }
+    textarea {
+        height: 200px;
+    }
+    input[type=submit] {
+        box-shadow: none;
+        text-shadow: none;
+        background: $color__accent-blue;
+        color: #FFF;
+        font-weight: bold;
+        text-transform: uppercase;
+        &:hover {
+            background: #FFF;
+            color: $color__accent-blue;
+            border-color: $color__accent-blue;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
 }

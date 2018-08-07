@@ -1,0 +1,39 @@
+.contact-container {
+    >.blue-heading {
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 0;
+    }
+}
+
+.contact-info-container {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contact-info-wrapper {
+    margin-bottom: 3.5rem;
+    >div {
+        margin-bottom: 2rem;
+    }
+    p {
+        margin: 0;
+    }
+    a {
+        color: $color__text-main;
+        &:hover {
+            color: $color__accent-blue;
+        }
+    }
+}
+
+.contact-label {
+    color: $color__accent-blue;
+    font-weight: bold;
+}
+
+#wpcf7-f96-o1 {
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+}

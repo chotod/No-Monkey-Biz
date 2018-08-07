@@ -11,15 +11,20 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
             <section class="banner-container">
-                <h2>Gallery</h2>
-                <div class="banner-content">
-                    <?php while ( have_posts() ) : the_post(); ?>
-                        <?php the_content(); ?>
-                    <?php endwhile; // End of the loop. ?>
+                <img src="<?php echo the_field("banner_image"); ?>" alt="banner image">
+                <div class="banner-wrapper">
+                    <div class="banner-title">
+                        <h2><span>Gallery</span></h2>
+                    </div>
+                    <div class="banner-content">
+                        <?php while ( have_posts() ) : the_post(); ?>
+                            <?php the_content(); ?>
+                        <?php endwhile; // End of the loop. ?>
+                    </div>
                 </div>
             </section>
 
-            <section class="gallery-container">
+            <section class="gallery-container l-container">
                 <?php echo the_field('gallery_photos'); ?>
             </section>
 

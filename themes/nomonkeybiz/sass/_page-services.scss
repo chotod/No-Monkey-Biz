@@ -1,6 +1,17 @@
+.service-feature-content {
+    width: 145px;
+    margin: 0 auto;
+    @include media($tablet) {
+        width: 160px;
+    }
+}
+
 .services-container {
     >div {
         margin-bottom: 4rem;
+        @include media($tablet) {
+            margin-bottom: 6rem;
+        }
     }
     >div:last-of-type {
         margin-bottom: 0;
@@ -11,6 +22,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @include media($tablet) {
+        max-width: 600px;
+        margin: 0 auto;
+    }
     >div {
         width: 45%;
         margin-bottom: 2.5rem;
@@ -21,7 +36,8 @@
 }
 
 .service-image-wrapper {
-    height: 250px;
+    max-width: 400px;
+    margin: 0 auto;
     margin-bottom: 2.5rem;
     img {
         width: 100%;
@@ -32,6 +48,8 @@
 
 .service-writeup {
     text-align: justify;
+    max-width: 650px;
+    margin: 0 auto;
     p {
         margin-bottom: 0;
     }

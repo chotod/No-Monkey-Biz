@@ -23,6 +23,11 @@
     }
 }
 
+.about-feature-content {
+    max-width: 490px;
+    margin: 0 auto;
+}
+
 .guarantee-container {
     .section-title {
         p {
@@ -35,5 +40,7 @@
 }
 
 .guarantee-content {
+    max-width: 700px;
+    margin: 0 auto;
     text-align: justify;
 }
