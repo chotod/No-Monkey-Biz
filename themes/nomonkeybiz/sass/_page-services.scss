@@ -1,8 +1,8 @@
 .service-feature-content {
-    width: 145px;
+    max-width: 145px;
     margin: 0 auto;
     @include media($tablet) {
-        width: 160px;
+        max-width: 160px;
     }
 }
 
@@ -22,12 +22,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    @include media($tablet) {
-        max-width: 600px;
-        margin: 0 auto;
-    }
+    max-width: 600px;
+    margin: 0 auto;
     >div {
-        width: 45%;
+        width: 50%;
         margin-bottom: 2.5rem;
     }
     i {

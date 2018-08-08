@@ -57,6 +57,12 @@ get_header(); ?>
                 </div>
             </section>
 
+            <section class="home-testimonial-container">
+                <div>
+                    <?php echo do_shortcode("[slide-anything id='131']"); ?>
+                </div>
+            </section>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

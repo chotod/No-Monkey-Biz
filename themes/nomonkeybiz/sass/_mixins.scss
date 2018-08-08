@@ -25,21 +25,27 @@
     transform: translateX(-50%);
 }
 
-//Title Underline Styl
+//Title Underline Style
 @mixin title-underline($color) {
 	border-bottom: 2px solid $color;
 	padding-bottom: 1.2rem;
 }
 
 //Button Style
-@mixin button-style {
+@mixin button-style($bg_color, $txt_color) {
 	margin: 0 auto;
 	padding: 0.5rem 1.4rem;
 	border-radius: 20px;
 	text-decoration: none;
+	border: 1px solid $bg_color;
+    color: $txt_color;
+}
+
+//Button Hover Style
+@mixin button-hover-style($hover_bg, $hover_txt) {
 	&:hover {
-		border-color: $color__accent-blue;
-		background: $color__accent-blue;
-		color: #FFF;
+		border-color: $hover_bg;
+		background: $hover_bg;
+		color: $hover_txt;
 	}
 }

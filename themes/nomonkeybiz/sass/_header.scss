@@ -1,6 +1,6 @@
 .site-header {
     background: #fff;
-    height: 85px;
+    height: 70px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -24,7 +24,7 @@
     width: 60px;
     height: 50px;
     @include media($tablet) {
-        width: 80px;
+        width: 70px;
         height: 70px;
     }
 }
@@ -46,4 +46,31 @@
 #responsive-menu-wrapper {
     margin-top: 8rem !important;
     text-transform: uppercase;
+}
+
+button#responsive-menu-button {
+    top: 10px !important;
+}
+
+#responsive-menu {
+    width: 300px !important;
+    margin: 0 auto !important;
+    display: flex;
+    flex-wrap: wrap;
+    li:first-child {
+        display: none;
+    }
+}
+
+#responsive-menu-wrapper #responsive-menu {
+    .menu-social-icon {
+        width: 50%;
+    }
+    .menu-fb {
+        padding-left: 4.5rem;
+    }
+    .menu-ig {
+        padding-right: 5.5rem;
+        padding-top: 2px;
+    }
 }

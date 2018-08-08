@@ -8,6 +8,8 @@
 
 .contact-info-container {
     text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
     margin-bottom: 4rem;
 }
 
@@ -30,6 +32,17 @@
 .contact-label {
     color: $color__accent-blue;
     font-weight: bold;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    label, input {
+        width: 100%;
+    }
+    input[type=submit] {
+        width: initial;
+    }
 }
 
 #wpcf7-f96-o1 {

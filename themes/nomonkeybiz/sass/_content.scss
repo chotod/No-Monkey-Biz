@@ -70,7 +70,8 @@
     width: 100%;
     height: 620px;
     background: black;
-    position: relative;
+	position: relative;
+	margin-top: 1rem;
     img {
         width: 100%;
         height: 100%;
@@ -82,7 +83,7 @@
 
 .banner-wrapper {
 	@include absolute-horizontal-center;
-	top: 10rem;
+	top: 8rem;
 	width: 85%;
 	@include media($tablet) {
 		max-width: 750px;
@@ -95,6 +96,9 @@
 	font-family: $font__banner-titles;
 	color: #FFF;
 	margin-bottom: 4rem;
+	@include media($tablet) {
+		font-size: 1.3rem;
+	}
 	span {
 		@include title-underline($color__accent-blue);
 	}
@@ -103,8 +107,10 @@
 .banner-content {
 	text-align: center;
 	color: #FFF;
+	max-width: 500px;
+	margin: 0 auto;
 	@include media($tablet) {
-		font-size:	1.1rem;
+		font-size: 1.1rem;
 	}
 }
 
