@@ -1,5 +1,6 @@
 .site-header {
-    background: #fff;
+    background: hsla(0,0%,100%,.85);
+    border-bottom: 1px solid #e1e1e1;
     height: 70px;
     width: 100%;
     display: flex;
@@ -7,13 +8,46 @@
     position: fixed;
     top: 0;
     z-index: 99999;
+    @include media($desktop) {
+        justify-content: space-between;
+        border-bottom: none;
+    }
+}
+
+.transparent-header {
+    @include media($desktop) {
+        background: transparent;
+        position: absolute;
+    }
+}
+
+.fixed-header {
+    @include media($desktop) {
+	    border-bottom: 1px solid #e1e1e1;
+        background: rgba(255,255,255,0.85);
+        .site-branding a, .main-navigation .menu a {
+            color: $color__accent-blue;
+            &:hover {
+                border: none;
+            }
+        }
+    }
 }
 
 .site-branding {
     height: 50px;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
     @include media($tablet) {
         height: 60px;   
+    }
+    @include media($desktop) {
+        a {
+            display: flex;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
     }
 }
 
@@ -34,6 +68,11 @@
     @include media($desktop) {
         display: block;
     }
+    @include media($desktop) {
+        margin: 0;
+        margin-left: 0.5rem;
+        align-self: center;
+    }
 }
 
 .responsive-menu-button {
@@ -50,6 +89,7 @@
 
 button#responsive-menu-button {
     top: 10px !important;
+    
 }
 
 #responsive-menu {
@@ -72,5 +112,30 @@ button#responsive-menu-button {
     .menu-ig {
         padding-right: 5.5rem;
         padding-top: 2px;
+    }
+}
+
+.main-navigation {
+    @include media($desktop) {
+        flex-basis: 50%;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            li:first-child {
+                display: none;
+            }
+            a {
+                color: white;
+                text-transform: uppercase;
+                &:hover {
+                   border-top: 1px solid transparent;
+                }
+            }
+            .menu-social-icon a:hover {
+                border: none;
+            }
+        }
     }
 }

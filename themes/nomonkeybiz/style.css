@@ -641,14 +641,13 @@ a {
   width: 100%;
   height: 620px;
   background: black;
-  position: relative;
-  margin-top: 1rem; }
+  position: relative; }
   .banner-container img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    opacity: 0.7;
+    opacity: 0.65;
     -o-object-position: 56% 50%;
        object-position: 56% 50%; }
 
@@ -792,7 +791,8 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .site-header {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e1e1e1;
   height: 70px;
   width: 100%;
   display: -webkit-box;
@@ -804,13 +804,42 @@ object {
   position: fixed;
   top: 0;
   z-index: 99999; }
+  @media only screen and (min-width: 1024px) {
+    .site-header {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      border-bottom: none; } }
+
+@media only screen and (min-width: 1024px) {
+  .transparent-header {
+    background: transparent;
+    position: absolute; } }
+
+@media only screen and (min-width: 1024px) {
+  .fixed-header {
+    border-bottom: 1px solid #e1e1e1;
+    background: rgba(255, 255, 255, 0.85); }
+    .fixed-header .site-branding a, .fixed-header .main-navigation .menu a {
+      color: #048bd1; }
+      .fixed-header .site-branding a:hover, .fixed-header .main-navigation .menu a:hover {
+        border: none; } }
 
 .site-branding {
   height: 50px;
-  margin-left: 0.5rem; }
+  margin-left: 1rem; }
   @media only screen and (min-width: 750px) {
     .site-branding {
       height: 60px; } }
+  @media only screen and (min-width: 1024px) {
+    .site-branding a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold; } }
 
 .header-logo {
   background-image: url(../../assets/nmb-logo.png);
@@ -828,6 +857,12 @@ object {
   @media only screen and (min-width: 1024px) {
     .header-text {
       display: block; } }
+  @media only screen and (min-width: 1024px) {
+    .header-text {
+      margin: 0;
+      margin-left: 0.5rem;
+      -ms-flex-item-align: center;
+          align-self: center; } }
 
 .responsive-menu-button {
   -webkit-box-shadow: none;
@@ -863,6 +898,28 @@ button#responsive-menu-button {
 #responsive-menu-wrapper #responsive-menu .menu-ig {
   padding-right: 5.5rem;
   padding-top: 2px; }
+
+@media only screen and (min-width: 1024px) {
+  .main-navigation {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-right: 1rem;
+    margin-top: 1rem; }
+    .main-navigation .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      .main-navigation .menu li:first-child {
+        display: none; }
+      .main-navigation .menu a {
+        color: white;
+        text-transform: uppercase; }
+        .main-navigation .menu a:hover {
+          border-top: 1px solid transparent; }
+      .main-navigation .menu .menu-social-icon a:hover {
+        border: none; } }
 
 .home-banner-content, .fa-angle-down {
   position: absolute;

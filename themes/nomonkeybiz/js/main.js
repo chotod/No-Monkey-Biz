@@ -9,4 +9,20 @@
             }, 1000);
         });
     }
+
+    /**
+ * Function for moving navigation bar on scroll
+ */
+    var $document = $(document);
+
+    $document.scroll(function(){   
+        if ($document.scrollTop() > 698) {
+            $('#masthead').addClass('fixed-header');
+            $('#masthead').removeClass('transparent-header');
+        } 
+        else {
+            $('#masthead').removeClass('fixed-header');
+            $('#masthead').addClass('transparent-header');
+            }
+    });
 })(jQuery);
