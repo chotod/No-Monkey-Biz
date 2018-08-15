@@ -19,11 +19,11 @@ get_header(); ?>
                 <i class="fas fa-angle-down services-arrow"></i>
             </section>
 
-            <section class="services-container l-container">
+            <section class="home-services-container l-container">
                 <div class="section-title">
                     <p><span>Our Services</span></p>
                 </div>
-                <div class="services-wrapper">
+                <div class="home-services-wrapper">
                     <div class="home-service-icon-wrapper commercial-wrapper">
                         <div class="commercial-icon service-icon">
                             <i class="far fa-building fa-7x"></i>

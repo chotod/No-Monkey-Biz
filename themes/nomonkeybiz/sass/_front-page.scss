@@ -13,7 +13,7 @@
     font-size: 2.5rem;
 }
 
-.services-container {
+.home-services-container {
     text-align: center;
     a {
         @include button-style($color__accent-blue, $color__accent-blue);
@@ -21,7 +21,16 @@
     }
     span {
 		@include title-underline($color__accent-blue);
-	}
+    }
+}
+
+.home-services-wrapper {
+    @include media($desktop) {
+        max-width: 900px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
 }
 
 .home-service-icon-wrapper {
@@ -80,7 +89,20 @@
     }
 }
 
+.owl-carousel {
+    z-index: 0 !important;
+}
+
 .owl-nav button {
     box-shadow: none;
     outline: none;
+}
+
+.owl-item h5 {
+    @include media($tablet) {
+        font-size: 1.1rem;
+    }
+    @include media($desktop) {
+        font-size: 1.5rem;
+    }
 }

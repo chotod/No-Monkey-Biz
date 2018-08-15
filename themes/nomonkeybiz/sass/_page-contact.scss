@@ -1,16 +1,51 @@
 .contact-container {
-    >.blue-heading {
+    @include media($desktop) {
+        max-width: 950px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .blue-heading {
         text-transform: uppercase;
         text-align: center;
         margin-top: 0;
+        margin-bottom: 2rem;
+        @include media($tablet) {
+            margin-bottom: 3rem;
+        }
+        @include media($desktop) {
+            width: 100%;
+        }
+    }
+}
+
+.contact-info-container, .contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    @include media($desktop) {
+        margin: 0;
     }
 }
 
 .contact-info-container {
     text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
     margin-bottom: 4rem;
+    @include media($desktop) {
+        width: 50%;
+    }
+}
+
+.contact-form-container {
+    @include media($desktop) {
+        width: 45%;
+    }
+    label, input {
+        width: 100%;
+    }
+    input[type=submit] {
+        width: initial;
+    }
 }
 
 .contact-info-wrapper {
@@ -34,19 +69,15 @@
     font-weight: bold;
 }
 
-.contact-form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    label, input {
-        width: 100%;
-    }
-    input[type=submit] {
-        width: initial;
-    }
-}
-
 #wpcf7-f96-o1 {
+    @include media($desktop) {
+        p {
+            margin: 0;
+        }
+    }
     p:last-of-type {
         margin-bottom: 0;
+        display: flex;
+        flex-direction: row-reverse;
     }
 }

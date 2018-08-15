@@ -71,6 +71,10 @@
     height: 620px;
     background: black;
 	position: relative;
+	@include media($desktop) {
+		height: 670px;
+		margin-bottom: 4rem;
+	}
     img {
         width: 100%;
         height: 100%;
@@ -86,6 +90,9 @@
 	width: 85%;
 	@include media($tablet) {
 		max-width: 750px;
+	}
+	@include media($desktop) {
+		top: 10rem;
 	}
 }
 
