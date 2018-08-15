@@ -4,6 +4,9 @@
     @include media($tablet) {
         max-width: 160px;
     }
+    @include media($desktop) {
+        max-width: 180px;
+    }
 }
 
 .services-container {

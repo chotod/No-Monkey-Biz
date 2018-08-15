@@ -312,6 +312,9 @@ html {
           box-sizing: border-box;
   font-size: 16px;
   font-size: 1rem; }
+  @media only screen and (min-width: 1024px) {
+    html {
+      font-size: 18px; } }
 
 *,
 *:before,
@@ -660,13 +663,17 @@ a {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   top: 8rem;
-  width: 85%; }
+  width: 85%;
+  animation: fadein 3.5s;
+  -moz-animation: fadein 3.5s;
+  /* Firefox */
+  -webkit-animation: fadein 3.5s;
+  /* Safari and Chrome */
+  -o-animation: fadein 3.5s;
+  /* Opera */ }
   @media only screen and (min-width: 750px) {
     .banner-wrapper {
       max-width: 750px; } }
-  @media only screen and (min-width: 1024px) {
-    .banner-wrapper {
-      top: 10rem; } }
 
 .banner-title {
   text-transform: uppercase;
@@ -678,7 +685,7 @@ a {
     .banner-title {
       font-size: 1.3rem; } }
   .banner-title span {
-    border-bottom: 2px solid #048bd1;
+    border-bottom: 2px solid #048BD1;
     padding-bottom: 1.2rem; }
 
 .banner-content {
@@ -698,15 +705,21 @@ a {
   margin-bottom: 4.5rem; }
   .section-title p {
     margin-top: 0; }
+  @media only screen and (min-width: 1024px) {
+    .section-title {
+      font-size: 25px; } }
 
 .blue-heading {
   font-size: 20px;
   font-weight: bold;
-  color: #048bd1; }
+  color: #048BD1; }
+  @media only screen and (min-width: 1024px) {
+    .blue-heading {
+      font-size: 25px; } }
 
 /* Forms */
 .application-form-wrapper input, .application-form-wrapper textarea, .contact-form-container input, .contact-form-container textarea {
-  border: 1px solid #048bd1;
+  border: 1px solid #048BD1;
   border-radius: 0; }
   .application-form-wrapper input:focus, .application-form-wrapper textarea:focus, .contact-form-container input:focus, .contact-form-container textarea:focus {
     outline: none; }
@@ -721,16 +734,29 @@ a {
   -webkit-box-shadow: none;
           box-shadow: none;
   text-shadow: none;
-  background: #048bd1;
+  background: #048BD1;
   color: #FFF;
   font-weight: bold;
   text-transform: uppercase; }
   .application-form-wrapper input[type=submit]:hover, .contact-form-container input[type=submit]:hover {
     background: #FFF;
-    color: #048bd1;
-    border-color: #048bd1; }
+    color: #048BD1;
+    border-color: #048BD1; }
   .application-form-wrapper input[type=submit]:focus, .contact-form-container input[type=submit]:focus {
     outline: none; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -798,7 +824,7 @@ object {
 /* Front page */
 .site-header {
   background: rgba(255, 255, 255, 0.85);
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid #E1E1E1;
   height: 70px;
   width: 100%;
   display: -webkit-box;
@@ -815,7 +841,8 @@ object {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      border-bottom: none; } }
+      border-bottom: none;
+      top: initial; } }
 
 @media only screen and (min-width: 1024px) {
   .transparent-header {
@@ -824,10 +851,10 @@ object {
 
 @media only screen and (min-width: 1024px) {
   .fixed-header {
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid #E1E1E1;
     background: rgba(255, 255, 255, 0.85); }
     .fixed-header .site-branding a, .fixed-header .main-navigation .menu a {
-      color: #048bd1; }
+      color: #048BD1; }
       .fixed-header .site-branding a:hover, .fixed-header .main-navigation .menu a:hover {
         border: none; } }
 
@@ -848,7 +875,7 @@ object {
       font-weight: bold; } }
 
 .header-logo {
-  background-image: url(../../assets/nmb-logo.png);
+  background-image: url(../../assets/images/nmb-logo.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 60px;
@@ -907,8 +934,8 @@ button#responsive-menu-button {
 
 @media only screen and (min-width: 1024px) {
   .main-navigation {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
     margin-right: 1rem;
     margin-top: 1rem; }
     .main-navigation .menu {
@@ -921,7 +948,8 @@ button#responsive-menu-button {
         display: none; }
       .main-navigation .menu a {
         color: white;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        margin-top: 1px; }
         .main-navigation .menu a:hover {
           border-top: 1px solid transparent; }
       .main-navigation .menu .menu-social-icon a:hover {
@@ -932,7 +960,7 @@ button#responsive-menu-button {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  color: #048bd1; }
+  color: #048BD1; }
 
 .home-banner-content {
   top: 12rem;
@@ -951,14 +979,14 @@ button#responsive-menu-button {
     padding: 0.5rem 1.4rem;
     border-radius: 20px;
     text-decoration: none;
-    border: 1px solid #048bd1;
-    color: #048bd1; }
+    border: 1px solid #048BD1;
+    color: #048BD1; }
     .home-services-container a:hover {
-      border-color: #048bd1;
-      background: #048bd1;
+      border-color: #048BD1;
+      background: #048BD1;
       color: #FFF; }
   .home-services-container span {
-    border-bottom: 2px solid #048bd1;
+    border-bottom: 2px solid #048BD1;
     padding-bottom: 1.2rem; }
 
 @media only screen and (min-width: 1024px) {
@@ -975,7 +1003,7 @@ button#responsive-menu-button {
   margin-bottom: 4rem; }
   .home-service-icon-wrapper div {
     margin-bottom: 2.5rem;
-    color: #048bd1; }
+    color: #048BD1; }
   .home-service-icon-wrapper .blue-heading {
     text-transform: uppercase; }
 
@@ -1008,7 +1036,7 @@ button#responsive-menu-button {
   .home-about-info-container .section-title {
     margin-bottom: 0; }
     .home-about-info-container .section-title span {
-      border-bottom: 2px solid #048bd1;
+      border-bottom: 2px solid #048BD1;
       padding-bottom: 1.2rem; }
   .home-about-info-container a {
     margin: 0 auto;
@@ -1020,7 +1048,7 @@ button#responsive-menu-button {
     .home-about-info-container a:hover {
       border-color: #FFF;
       background: #FFF;
-      color: #048bd1; }
+      color: #048BD1; }
 
 .home-about-info-wrapper {
   max-width: 80%;
@@ -1070,7 +1098,7 @@ button#responsive-menu-button {
       width: 28%; } }
 
 .about-feature-icon {
-  border: 7px solid #048bd1;
+  border: 7px solid #048BD1;
   border-radius: 50%;
   height: 75px;
   width: 75px;
@@ -1086,14 +1114,14 @@ button#responsive-menu-button {
   margin: 0 auto; }
   .about-feature-icon i {
     font-size: 2.5rem;
-    color: #048bd1; }
+    color: #048BD1; }
 
 .about-feature-content {
   max-width: 490px;
   margin: 0 auto; }
 
 .guarantee-container .section-title p {
-  color: #048bd1; }
+  color: #048BD1; }
 
 .guarantee-container .section-title span {
   border-bottom: 2px solid #242323;
@@ -1114,6 +1142,9 @@ button#responsive-menu-button {
   @media only screen and (min-width: 750px) {
     .service-feature-content {
       max-width: 160px; } }
+  @media only screen and (min-width: 1024px) {
+    .service-feature-content {
+      max-width: 180px; } }
 
 .services-container {
   text-align: center; }
@@ -1200,10 +1231,10 @@ button#responsive-menu-button {
   .testimonial-writeup span {
     font-style: normal;
     font-size: 1.5rem;
-    color: #048bd1; }
+    color: #048BD1; }
 
 .testimonial-name {
-  color: #048bd1; }
+  color: #048BD1; }
 
 .testimonial-name, .testimonial-credentials {
   font-size: 14px;
@@ -1272,17 +1303,23 @@ button#responsive-menu-button {
 
 .contact-info-wrapper {
   margin-bottom: 3.5rem; }
+  @media only screen and (min-width: 1024px) {
+    .contact-info-wrapper {
+      margin-bottom: 2rem; } }
   .contact-info-wrapper > div {
     margin-bottom: 2rem; }
+    @media only screen and (min-width: 1024px) {
+      .contact-info-wrapper > div {
+        margin-bottom: 1rem; } }
   .contact-info-wrapper p {
     margin: 0; }
   .contact-info-wrapper a {
     color: #404040; }
     .contact-info-wrapper a:hover {
-      color: #048bd1; }
+      color: #048BD1; }
 
 .contact-label {
-  color: #048bd1;
+  color: #048BD1;
   font-weight: bold; }
 
 @media only screen and (min-width: 1024px) {
@@ -1300,7 +1337,7 @@ button#responsive-menu-button {
           flex-direction: row-reverse; }
 
 .footer-top {
-  background: #048bd1;
+  background: #048BD1;
   padding: 1rem 2rem;
   height: 250px; }
   @media only screen and (min-width: 750px) {

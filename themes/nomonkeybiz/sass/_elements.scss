@@ -5,6 +5,9 @@
 html {
 	box-sizing: border-box;
 	@include font-size(1);
+	@include media($desktop) {
+		font-size: 18px;
+	}
 }
 
 *,

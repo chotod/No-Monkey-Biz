@@ -87,11 +87,12 @@
 	@include absolute-horizontal-center;
 	top: 8rem;
 	width: 85%;
+	animation: fadein 3.5s;
+    -moz-animation: fadein 3.5s; /* Firefox */
+    -webkit-animation: fadein 3.5s; /* Safari and Chrome */
+    -o-animation: fadein 3.5s; /* Opera */
 	@include media($tablet) {
 		max-width: 750px;
-	}
-	@include media($desktop) {
-		top: 10rem;
 	}
 }
 
@@ -128,12 +129,18 @@
 	font-family: $font__section-titles;
 	font-size: 22px;
 	margin-bottom: 4.5rem;
+	@include media($desktop) {
+		font-size: 25px;
+	}
 }
 
 .blue-heading {
 	font-size: 20px;
     font-weight: bold;
-    color: $color__accent-blue;
+	color: $color__accent-blue;
+	@include media($desktop) {
+		font-size: 25px;
+	}
 }
 
 /* Forms */
@@ -167,5 +174,38 @@
         &:focus {
             outline: none;
         }
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
     }
 }

@@ -11,7 +11,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function red_starter_body_classes( $classes ) {
+function nmb_starter_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -19,4 +19,27 @@ function red_starter_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'red_starter_body_classes' );
+add_filter( 'body_class', 'nmb_starter_body_classes' );
+
+/**
+ * Changing login logo link to website Homepage.
+ */
+function login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'login_logo_url' );
+
+/**
+ * Changing login logo to No Monkey Biz.
+ */
+function login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/nmb-login-logo.png);
+			background-size: 100%; 
+			width: 100%;
+			height: 80px%;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'login_logo' );

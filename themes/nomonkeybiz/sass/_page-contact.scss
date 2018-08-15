@@ -50,8 +50,14 @@
 
 .contact-info-wrapper {
     margin-bottom: 3.5rem;
+    @include media($desktop) {
+        margin-bottom: 2rem;
+    }
     >div {
         margin-bottom: 2rem;
+        @include media($desktop) {
+            margin-bottom: 1rem;
+        }
     }
     p {
         margin: 0;
