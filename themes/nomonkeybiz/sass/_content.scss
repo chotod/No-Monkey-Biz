@@ -68,11 +68,10 @@
 
 .banner-container {
     width: 100%;
-    height: 620px;
+    height: 670px;
     background: black;
 	position: relative;
 	@include media($desktop) {
-		height: 670px;
 		margin-bottom: 4rem;
 	}
     img {

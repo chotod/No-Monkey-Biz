@@ -639,12 +639,11 @@ a {
 /* Shared Stylings */
 .banner-container {
   width: 100%;
-  height: 620px;
+  height: 670px;
   background: black;
   position: relative; }
   @media only screen and (min-width: 1024px) {
     .banner-container {
-      height: 670px;
       margin-bottom: 4rem; } }
   .banner-container img {
     width: 100%;
@@ -942,6 +941,8 @@ button#responsive-menu-button {
 .fa-angle-down {
   top: 32rem;
   font-size: 2.5rem; }
+  .fa-angle-down:hover {
+    cursor: pointer; }
 
 .home-services-container {
   text-align: center; }

@@ -11,6 +11,9 @@
 .fa-angle-down {
     top: 32rem;
     font-size: 2.5rem;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .home-services-container {
