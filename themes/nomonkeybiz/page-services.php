@@ -12,7 +12,7 @@ get_header(); ?>
 
             <section class="banner-container">
                 <img src="<?php echo the_field("banner_image"); ?>" alt="banner image">
-                <div class="banner-wrapper">
+                <div class="banner-wrapper services-banner-wrapper">
                     <div class="banner-title">
                         <h2><span>Services</span></h2>
                     </div>
@@ -38,7 +38,7 @@ get_header(); ?>
                 <?php $services_list = CFS()->get( 'services_list' );
                 if(!empty($services_list)) :
                     foreach( $services_list as $service ): ?>
-                        <div>
+                        <div class="fading">
                             <div class="service-image-wrapper">
                                 <img src="<?php echo $service['service_image']; ?>" alt="<?php echo esc_html($service['service_title']);?> Photo"/>
                             </div>

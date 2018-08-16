@@ -48,6 +48,36 @@
 	display: block;
 }
 
+/* Animation */
+//fade-in on scroll
+.fading {
+	opacity: 0;
+	-webkit-transform: translateY(50px);
+			transform: translateY(50px);
+	-webkit-transition: all 2.5s ease;
+	transition: all 2.5s ease;
+}
+
+.animate { 
+	-webkit-transform: translateY(0px); 
+			transform: translateY(0px);
+	opacity: 1;
+}
+
+.slide {
+	opacity: 0;
+	-webkit-transform: translateX(50px);
+			transform: translateX(50px);
+	-webkit-transition: all 2.5s ease;
+	transition: all 2.5s ease;
+}
+
+.animateSlide { 
+	-webkit-transform: translateX(0px); 
+			transform: translateX(0px);
+	opacity: 1;
+}
+
 /* Containers */
 .l-container {
 	padding: 60px 30px;

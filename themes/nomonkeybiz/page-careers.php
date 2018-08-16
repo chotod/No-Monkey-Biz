@@ -24,7 +24,7 @@ get_header(); ?>
                 </div>
             </section>
 
-            <section class="careers-container l-container">
+            <section class="careers-container l-container fading">
                 <p class="application-description"><?php echo the_field('application_description'); ?></p>
                 <div class="application-form-wrapper"><?php echo the_field('application_form'); ?></div>
             </section>

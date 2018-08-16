@@ -1,3 +1,7 @@
+.services-banner-wrapper {
+    max-width: 900px;
+}
+
 .service-feature-content {
     max-width: 145px;
     margin: 0 auto;
@@ -38,7 +42,7 @@
 .service-feature-icon {
     height: 42px;
     @include media($desktop) {
-        height: 50px;
+        height: 60px;
     }
 }
 
@@ -48,19 +52,27 @@
     justify-content: space-between;
     max-width: 600px;
     margin: 0 auto;
+    @include media($desktop) {
+        max-width: 100%;
+        margin-top: 6rem;
+    }
     >div {
         width: 50%;
         margin-bottom: 2.5rem;
         @include media($desktop) {
             margin-bottom: 1rem;
+            width: 25%;
         }
     }
     i {
         font-size: 2.5rem;
-        animation: expandIcons 2s;
-        -moz-animation: expandIcons 2s; /* Firefox */
-        -webkit-animation: expandIcons 2s; /* Safari and Chrome */
-        -o-animation: expandIcons 2s; /* Opera */
+        animation: expandIcons 3s;
+        -moz-animation: expandIcons 3s; /* Firefox */
+        -webkit-animation: expandIcons 3s; /* Safari and Chrome */
+        -o-animation: expandIcons 3s; /* Opera */
+        @include media($desktop) {
+            font-size: 3rem;
+        }
     }
 }
 

@@ -24,7 +24,7 @@ get_header(); ?>
                 </div>
             </section>
 
-            <section class="contact-container l-container">
+            <section class="contact-container l-container fading">
                 <p class="blue-heading"><?php echo the_field('contact_header'); ?></p>
                 <div class="contact-info-container">
                     <div class="contact-info-wrapper">

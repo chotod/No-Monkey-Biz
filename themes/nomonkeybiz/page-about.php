@@ -24,7 +24,7 @@ get_header(); ?>
                 </div>
             </section>
 
-            <section class="about-info-container l-container">
+            <section class="about-info-container l-container fading">
                 <?php $company_features = CFS()->get( 'company_features' );
                 $guarantee_content = CFS()->get( 'guarantee_content' );
                 foreach( $company_features as $feature ): ?>
@@ -40,7 +40,7 @@ get_header(); ?>
                 <?php endforeach; wp_reset_postdata(); ?>
             </section>
 
-            <section class="guarantee-container z-container">
+            <section class="guarantee-container z-container fading">
                 <div class="section-title">
                     <p><span>Work Safety Guarantee</span></p>
                 </div>

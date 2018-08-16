@@ -626,6 +626,31 @@ a {
 .bypostauthor {
   display: block; }
 
+/* Animation */
+.fading {
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+  transform: translateY(50px);
+  -webkit-transition: all 2.5s ease;
+  transition: all 2.5s ease; }
+
+.animate {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  opacity: 1; }
+
+.slide {
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+  transform: translateX(50px);
+  -webkit-transition: all 2.5s ease;
+  transition: all 2.5s ease; }
+
+.animateSlide {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1; }
+
 /* Containers */
 .l-container {
   padding: 60px 30px; }
@@ -963,7 +988,14 @@ button#responsive-menu-button {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  color: #048BD1; }
+  color: #048BD1;
+  animation: fadeIn 5.5s;
+  -moz-animation: fadeIn 5.5s;
+  /* Firefox */
+  -webkit-animation: fadeIn 5.5s;
+  /* Safari and Chrome */
+  -o-animation: fadeIn 5.5s;
+  /* Opera */ }
 
 .home-banner-content {
   top: 12rem;
@@ -1139,6 +1171,9 @@ button#responsive-menu-button {
       text-align: center;
       max-width: 900px; } }
 
+.services-banner-wrapper {
+  max-width: 900px; }
+
 .service-feature-content {
   max-width: 145px;
   margin: 0 auto; }
@@ -1181,7 +1216,7 @@ button#responsive-menu-button {
   height: 42px; }
   @media only screen and (min-width: 1024px) {
     .service-feature-icon {
-      height: 50px; } }
+      height: 60px; } }
 
 .services-banner-content {
   display: -webkit-box;
@@ -1194,21 +1229,29 @@ button#responsive-menu-button {
           justify-content: space-between;
   max-width: 600px;
   margin: 0 auto; }
+  @media only screen and (min-width: 1024px) {
+    .services-banner-content {
+      max-width: 100%;
+      margin-top: 6rem; } }
   .services-banner-content > div {
     width: 50%;
     margin-bottom: 2.5rem; }
     @media only screen and (min-width: 1024px) {
       .services-banner-content > div {
-        margin-bottom: 1rem; } }
+        margin-bottom: 1rem;
+        width: 25%; } }
   .services-banner-content i {
     font-size: 2.5rem;
-    animation: expandIcons 2s;
-    -moz-animation: expandIcons 2s;
+    animation: expandIcons 3s;
+    -moz-animation: expandIcons 3s;
     /* Firefox */
-    -webkit-animation: expandIcons 2s;
+    -webkit-animation: expandIcons 3s;
     /* Safari and Chrome */
-    -o-animation: expandIcons 2s;
+    -o-animation: expandIcons 3s;
     /* Opera */ }
+    @media only screen and (min-width: 1024px) {
+      .services-banner-content i {
+        font-size: 3rem; } }
 
 .service-image-wrapper {
   max-width: 400px;
