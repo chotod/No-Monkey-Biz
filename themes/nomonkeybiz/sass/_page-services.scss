@@ -35,6 +35,13 @@
     }
 }
 
+.service-feature-icon {
+    height: 42px;
+    @include media($desktop) {
+        height: 50px;
+    }
+}
+
 .services-banner-content {
     display: flex;
     flex-wrap: wrap;
@@ -44,9 +51,16 @@
     >div {
         width: 50%;
         margin-bottom: 2.5rem;
+        @include media($desktop) {
+            margin-bottom: 1rem;
+        }
     }
     i {
         font-size: 2.5rem;
+        animation: expandIcons 2s;
+        -moz-animation: expandIcons 2s; /* Firefox */
+        -webkit-animation: expandIcons 2s; /* Safari and Chrome */
+        -o-animation: expandIcons 2s; /* Opera */
     }
 }
 
@@ -77,5 +91,38 @@
     margin: 0 auto;
     p {
         margin-bottom: 0;
+    }
+}
+
+@keyframes expandIcons {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+}
+@-moz-keyframes expandIcons { /* Firefox */
+    from {
+        transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+}
+@-webkit-keyframes expandIcons { /* Safari and Chrome */
+    from {
+        transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+}
+@-o-keyframes expandIcons { /* Opera */
+    from {
+        transform: scale(0);
+    }
+    to {
+      transform: scale(1);
     }
 }

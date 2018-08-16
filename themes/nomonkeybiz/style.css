@@ -643,7 +643,7 @@ a {
 .banner-container {
   width: 100%;
   height: 670px;
-  background: black;
+  background: #000;
   position: relative; }
   @media only screen and (min-width: 1024px) {
     .banner-container {
@@ -653,9 +653,9 @@ a {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    opacity: 0.65;
-    -o-object-position: 56% 50%;
-       object-position: 56% 50%; }
+    opacity: 0.6;
+    -o-object-position: 56% 31%;
+       object-position: 56% 31%; }
 
 .banner-wrapper {
   position: absolute;
@@ -664,12 +664,12 @@ a {
           transform: translateX(-50%);
   top: 8rem;
   width: 85%;
-  animation: fadein 3.5s;
-  -moz-animation: fadein 3.5s;
+  animation: fadeIn 5.5s;
+  -moz-animation: fadeIn 5.5s;
   /* Firefox */
-  -webkit-animation: fadein 3.5s;
+  -webkit-animation: fadeIn 5.5s;
   /* Safari and Chrome */
-  -o-animation: fadein 3.5s;
+  -o-animation: fadeIn 5.5s;
   /* Opera */ }
   @media only screen and (min-width: 750px) {
     .banner-wrapper {
@@ -684,6 +684,9 @@ a {
   @media only screen and (min-width: 750px) {
     .banner-title {
       font-size: 1.3rem; } }
+  @media only screen and (min-width: 1024px) {
+    .banner-title {
+      margin-bottom: 3rem; } }
   .banner-title span {
     border-bottom: 2px solid #048BD1;
     padding-bottom: 1.2rem; }
@@ -745,13 +748,13 @@ a {
   .application-form-wrapper input[type=submit]:focus, .contact-form-container input[type=submit]:focus {
     outline: none; }
 
-@keyframes fadein {
+@keyframes fadeIn {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
 
-@-webkit-keyframes fadein {
+@-webkit-keyframes fadeIn {
   /* Safari and Chrome */
   from {
     opacity: 0; }
@@ -1174,6 +1177,12 @@ button#responsive-menu-button {
   .services-container > div:last-of-type {
     margin-bottom: 0; }
 
+.service-feature-icon {
+  height: 42px; }
+  @media only screen and (min-width: 1024px) {
+    .service-feature-icon {
+      height: 50px; } }
+
 .services-banner-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1188,8 +1197,18 @@ button#responsive-menu-button {
   .services-banner-content > div {
     width: 50%;
     margin-bottom: 2.5rem; }
+    @media only screen and (min-width: 1024px) {
+      .services-banner-content > div {
+        margin-bottom: 1rem; } }
   .services-banner-content i {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    animation: expandIcons 2s;
+    -moz-animation: expandIcons 2s;
+    /* Firefox */
+    -webkit-animation: expandIcons 2s;
+    /* Safari and Chrome */
+    -o-animation: expandIcons 2s;
+    /* Opera */ }
 
 .service-image-wrapper {
   max-width: 400px;
@@ -1215,6 +1234,23 @@ button#responsive-menu-button {
   margin: 0 auto; }
   .service-writeup p {
     margin-bottom: 0; }
+
+@keyframes expandIcons {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-webkit-keyframes expandIcons {
+  /* Safari and Chrome */
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
 
 .testimonials-container > div {
   margin: 0 auto;
