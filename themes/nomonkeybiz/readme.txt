@@ -25,7 +25,7 @@ A Theme for No Monkey Biz.
 
 = Does this theme support any plugins? =
 
-RED Starter Theme includes support for Infinite Scroll in Jetpack.
+No Monkey Biz Theme includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 

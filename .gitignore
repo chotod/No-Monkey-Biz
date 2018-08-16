@@ -30,6 +30,7 @@ access_log
 # ========================================================== #
 plugins/*
 !plugins/nmb-functionality/
+!plugins/footer-widget/
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
