@@ -23,11 +23,18 @@
         }
         @include media($desktop) {
             max-width: 1000px;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: space-between;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             text-align: initial;
             &:nth-of-type(even) {
-                flex-direction: row-reverse;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: reverse;
+                    -ms-flex-direction: row-reverse;
+                        flex-direction: row-reverse;
                 .blue-heading {
                     text-align: right;
                 }
@@ -47,9 +54,14 @@
 }
 
 .services-banner-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     max-width: 600px;
     margin: 0 auto;
     @include media($desktop) {
@@ -87,7 +99,8 @@
     img {
         width: 100%;
         height: 100%;
-        object-fit: cover;  
+        -o-object-fit: cover;
+           object-fit: cover;  
     }
 }
 
@@ -108,33 +121,21 @@
 
 @keyframes expandIcons {
     from {
-      transform: scale(0);
+      -webkit-transform: scale(0);
+              transform: scale(0);
     }
     to {
-      transform: scale(1);
-    }
-}
-@-moz-keyframes expandIcons { /* Firefox */
-    from {
-        transform: scale(0);
-    }
-    to {
-      transform: scale(1);
+      -webkit-transform: scale(1);
+              transform: scale(1);
     }
 }
 @-webkit-keyframes expandIcons { /* Safari and Chrome */
     from {
-        transform: scale(0);
+        -webkit-transform: scale(0);
+                transform: scale(0);
     }
     to {
-      transform: scale(1);
-    }
-}
-@-o-keyframes expandIcons { /* Opera */
-    from {
-        transform: scale(0);
-    }
-    to {
-      transform: scale(1);
+      -webkit-transform: scale(1);
+              transform: scale(1);
     }
 }

@@ -28,7 +28,7 @@ get_header(); ?>
                 <?php $testimonials_list = CFS()->get( 'testimonials_list' );
                 if(!empty($testimonials_list)) :
                     foreach( $testimonials_list as $testimonial ): ?>
-                        <div class="slide">
+                        <div class="slideIn">
                             <p class="testimonial-writeup"><span>"</span><?php echo wp_kses($testimonial['testimonial_content'], $allowed_html); ?><span>"</span></p>
                             <p class="testimonial-name"><?php echo esc_html($testimonial['testimonial_name']);?></p>
                             <p class="testimonial-credentials"><?php echo esc_html($testimonial['testimonial_credentials']);?></p>

@@ -71,7 +71,7 @@
             } 
         });
 
-        $('.slide').each(function () {
+        $('.slideIn').each(function () {
             var cardTop = $(this).offset().top;
 
             if(cardTop <= bottomOfWindow ){

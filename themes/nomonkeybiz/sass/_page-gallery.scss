@@ -1,0 +1,19 @@
+.rl-gallery-item {
+    height: 250px;
+    a {
+        height: 100%;
+        img {
+            height: 100%;
+            -o-object-fit: cover;
+               object-fit: cover;
+        }
+    }
+}
+
+.rl-pagination-bottom {
+    text-align: right;
+    color: $color__text-main;
+    a {
+        color: $color__text-main;
+    }
+}

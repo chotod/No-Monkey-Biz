@@ -19,6 +19,12 @@ $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
+$color__accent-blue: #048BD1;
+$color__accent-dark: #242323;
+$color__accent-grey: #A0A09F;
+$color__accent-beige: #E6E0C3;
+$color__accent-lightgrey: #E1E1E1;
+
 // Typography
 
 $font__banner-titles: 'roboto-bold', 'arial', sans-serif;
@@ -28,13 +34,6 @@ $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
-
-//Colours
-$color__accent-blue: #048BD1;
-$color__accent-dark: #242323;
-$color__accent-grey: #A0A09F;
-$color__accent-beige: #E6E0C3;
-$color__accent-lightgrey: #E1E1E1;
 
 //Queries
 $tablet: 750px;
