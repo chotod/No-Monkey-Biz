@@ -19,7 +19,7 @@
         var $document = $(document);
 
         $document.scroll(function(){   
-            if ($document.scrollTop() > 670) {
+            if ($document.scrollTop() > 900) {
                 $('#masthead').addClass('fixed-header');
                 $('#masthead').removeClass('transparent-header');
             } 
