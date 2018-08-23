@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-            <section class="banner-container">
+            <section id="hero-img" class="banner-container">
                 <img src="<?php echo the_field("banner_image"); ?>" alt="banner image">
                 <div class="banner-wrapper">
                     <div class="banner-title">
