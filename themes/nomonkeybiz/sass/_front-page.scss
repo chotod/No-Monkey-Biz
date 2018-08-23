@@ -8,8 +8,12 @@
 }
 
 .home-banner-content {
+    max-width: 500px;
     top: 12rem;
     font-size: 30px;
+    @include media($desktop) {
+        top: 14rem;
+    }
 }
 
 .fa-angle-down {
@@ -17,6 +21,9 @@
     font-size: 2.5rem;
     &:hover {
         cursor: pointer;
+    }
+    @include media($desktop) {
+        top: 34rem;
     }
 }
 

@@ -672,7 +672,8 @@ a {
   position: relative; }
   @media only screen and (min-width: 1024px) {
     .banner-container {
-      margin-bottom: 4rem; } }
+      margin-bottom: 4rem;
+      height: 900px; } }
   .banner-container img {
     width: 100%;
     height: 100%;
@@ -699,6 +700,9 @@ a {
   @media only screen and (min-width: 750px) {
     .banner-wrapper {
       max-width: 750px; } }
+  @media only screen and (min-width: 1024px) {
+    .banner-wrapper {
+      top: 14rem; } }
 
 .banner-title {
   text-transform: uppercase;
@@ -999,14 +1003,21 @@ button#responsive-menu-button {
   /* Opera */ }
 
 .home-banner-content {
+  max-width: 500px;
   top: 12rem;
   font-size: 30px; }
+  @media only screen and (min-width: 1024px) {
+    .home-banner-content {
+      top: 14rem; } }
 
 .fa-angle-down {
   top: 32rem;
   font-size: 2.5rem; }
   .fa-angle-down:hover {
     cursor: pointer; }
+  @media only screen and (min-width: 1024px) {
+    .fa-angle-down {
+      top: 34rem; } }
 
 .home-services-container {
   text-align: center; }

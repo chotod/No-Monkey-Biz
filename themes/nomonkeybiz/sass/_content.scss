@@ -109,6 +109,7 @@
 	position: relative;
 	@include media($desktop) {
 		margin-bottom: 4rem;
+		height: 900px;
 	}
     img {
         width: 100%;
@@ -131,6 +132,9 @@
 	-o-animation: fadeIn 5.5s; /* Opera */
 	@include media($tablet) {
 		max-width: 750px;
+	}
+	@include media($desktop) {
+		top: 14rem;
 	}
 }
 
