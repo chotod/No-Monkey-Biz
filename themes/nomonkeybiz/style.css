@@ -1256,11 +1256,13 @@ button#responsive-menu-button {
 
 .service-image-wrapper {
   max-width: 400px;
+  height: 305px;
   margin: 0 auto;
   margin-bottom: 2.5rem; }
   @media only screen and (min-width: 1024px) {
     .service-image-wrapper {
       max-width: 48%;
+      height: 350px;
       margin: 0; } }
   .service-image-wrapper img {
     width: 100%;
