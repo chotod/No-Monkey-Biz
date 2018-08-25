@@ -1,38 +1,28 @@
 <?php
 /**
- * The template for displaying search results pages.
+ * The template for displaying 404 pages (not found).
+ *
+ * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
  * @package No_Monkey_Biz
  */
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+			<section class="error-404 not-found">
+				<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
+				<div class="page-content">
+					<?php $url = home_url(); ?>
+					<p>It looks like nothing was found at this location. Maybe try one of the links above or return <a href="<?php echo esc_url( $url ); ?>">Home</a></p>
+				</div><!-- .page-content -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content', 'search' ); ?>
-
-			<?php endwhile; ?>
-
-			<?php nmb_numbered_pagination(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
+			</section><!-- .error-404 -->
 
 		</main><!-- #main -->
-	</section><!-- #primary -->
+	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

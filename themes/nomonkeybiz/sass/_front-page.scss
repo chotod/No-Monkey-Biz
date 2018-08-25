@@ -1,10 +1,16 @@
 .home-banner-content, .fa-angle-down {
-    @include absolute-horizontal-center;
+     @include absolute-horizontal-center;
     color: $color__accent-blue;
     animation: fadeIn 5.5s;
     -moz-animation: fadeIn 5.5s; /* Firefox */
     -webkit-animation: fadeIn 5.5s; /* Safari and Chrome */
 	-o-animation: fadeIn 5.5s; /* Opera */
+}
+
+.home .home-banner-content span {
+    border: none;
+    padding: 0;
+    background: rgba(0,0,0,0.7);
 }
 
 .home-banner-content {
@@ -19,6 +25,9 @@
 .fa-angle-down {
     top: 32rem;
     font-size: 2.5rem;
+    background: rgba(0,0,0,0.7);
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
     &:hover {
         cursor: pointer;
     }

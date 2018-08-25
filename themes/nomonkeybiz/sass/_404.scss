@@ -1,0 +1,22 @@
+.error404, .search  {
+    margin-top: 6rem;
+    @include media($tablet) {
+        margin-top: 10rem;
+    }
+    .site-header {
+        top: 0;
+        background-color: $color__accent-dark;
+    }
+    .site-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+.error-404 {
+    text-align: center;
+    a {
+        color: $color__accent-blue;
+    }
+}
