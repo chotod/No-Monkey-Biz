@@ -27,7 +27,6 @@
 				<div class="site-branding">
 					<a href='<?php echo esc_url( home_url( '/' ) ); ?>'>
 						<div class='header-logo'></div>
-						<p class="header-text">No Monkey Biz.</p>
 					</a>
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>

@@ -892,10 +892,7 @@ object {
 
 .site-branding {
   height: 50px;
-  margin-left: 1rem; }
-  @media only screen and (min-width: 750px) {
-    .site-branding {
-      height: 60px; } }
+  margin-left: 0.5rem; }
   @media only screen and (min-width: 1024px) {
     .site-branding a {
       display: -webkit-box;
@@ -904,31 +901,21 @@ object {
       text-decoration: none;
       color: white;
       font-size: 1.2rem;
-      font-weight: bold; } }
+      font-weight: bold;
+      position: relative; } }
 
 .header-logo {
-  background-image: url(../../assets/images/nmb-logo.png);
+  background-image: url(../../assets/images/nmb-logo-new.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 60px;
-  height: 50px; }
-  @media only screen and (min-width: 750px) {
+  width: 80px;
+  height: 55px; }
+  @media only screen and (min-width: 1024px) {
     .header-logo {
-      width: 70px;
-      height: 70px; } }
-
-.header-text {
-  display: none; }
-  @media only screen and (min-width: 1024px) {
-    .header-text {
-      display: block; } }
-  @media only screen and (min-width: 1024px) {
-    .header-text {
-      margin: 0;
-      margin-left: 0.5rem;
-      -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center; } }
+      width: 90px;
+      height: 65px;
+      position: absolute;
+      left: 0.5rem; } }
 
 .responsive-menu-button {
   -webkit-box-shadow: none;
@@ -1004,8 +991,7 @@ button#responsive-menu-button {
 
 .home .home-banner-content span {
   border: none;
-  padding: 0;
-  background: rgba(0, 0, 0, 0.7); }
+  padding: 0; }
 
 .home-banner-content {
   max-width: 500px;
@@ -1018,7 +1004,6 @@ button#responsive-menu-button {
 .fa-angle-down {
   top: 32rem;
   font-size: 2.5rem;
-  background: rgba(0, 0, 0, 0.7);
   padding: 0.5rem 1rem;
   border-radius: 50%; }
   .fa-angle-down:hover {

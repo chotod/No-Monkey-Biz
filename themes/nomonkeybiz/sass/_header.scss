@@ -43,10 +43,7 @@
 
 .site-branding {
     height: 50px;
-    margin-left: 1rem;
-    @include media($tablet) {
-        height: 60px;   
-    }
+    margin-left: 0.5rem;
     @include media($desktop) {
         a {
             display: -webkit-box;
@@ -56,33 +53,22 @@
             color: white;
             font-size: 1.2rem;
             font-weight: bold;
+            position: relative;
         }
     }
 }
 
 .header-logo {
-    background-image: url(../../assets/images/nmb-logo.png);
+    background-image: url(../../assets/images/nmb-logo-new.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 60px;
-    height: 50px;
-    @include media($tablet) {
-        width: 70px;
-        height: 70px;
-    }
-}
-
-.header-text {
-    display: none;
+    width: 80px;
+    height: 55px;
     @include media($desktop) {
-        display: block;
-    }
-    @include media($desktop) {
-        margin: 0;
-        margin-left: 0.5rem;
-        -ms-flex-item-align: center;
-            -ms-grid-row-align: center;
-            align-self: center;
+        width: 90px;
+        height: 65px;
+        position: absolute;
+        left: 0.5rem;
     }
 }
 
