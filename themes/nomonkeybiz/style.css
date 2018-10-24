@@ -995,7 +995,7 @@ button#responsive-menu-button {
 
 .home-banner-content {
   max-width: 500px;
-  top: 12rem;
+  top: 9rem;
   font-size: 30px; }
   @media only screen and (min-width: 1024px) {
     .home-banner-content {
