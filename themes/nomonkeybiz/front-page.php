@@ -16,7 +16,7 @@ get_header(); ?>
                         <?php the_content(); ?>
                     <?php endwhile; // End of the loop. ?>
                 </div>
-                <i class="fas fa-angle-down services-arrow"></i>
+                <!-- <i class="fas fa-angle-down services-arrow"></i> -->
             </section>
 
             <section class="home-services-container l-container">
