@@ -862,9 +862,6 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   position: fixed;
   top: 0;
   z-index: 99999; }
@@ -888,32 +885,38 @@ object {
     .fixed-header .site-branding a, .fixed-header .main-navigation .menu a {
       color: #048BD1; }
       .fixed-header .site-branding a:hover, .fixed-header .main-navigation .menu a:hover {
-        border: none; } }
+        border: none; }
+    .fixed-header .site-branding a {
+      width: 80px;
+      height: 70px; } }
 
 .site-branding {
-  height: 50px;
+  height: 70px;
   margin-left: 0.5rem; }
-  @media only screen and (min-width: 1024px) {
-    .site-branding a {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      text-decoration: none;
-      color: white;
-      font-size: 1.2rem;
-      font-weight: bold;
-      position: relative; } }
+  .site-branding a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    width: 80px;
+    height: 80px; }
+    @media only screen and (min-width: 1024px) {
+      .site-branding a {
+        width: 150px;
+        height: 150px; } }
 
 .header-logo {
-  background-image: url(../../assets/images/nmb-logo-new.png);
+  background-image: url(../../assets/images/nmb-logo-2019.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 80px;
-  height: 55px; }
+  width: 100%;
+  height: 100%; }
   @media only screen and (min-width: 1024px) {
     .header-logo {
-      width: 90px;
-      height: 65px;
       position: absolute;
       left: 0.5rem; } }
 
