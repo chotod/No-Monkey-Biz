@@ -10,8 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-            <section id="hero-img" class="banner-container">
-                <img src="<?php echo the_field("banner_image"); ?>" alt="banner image">
+            <section id="hero-img" class="banner-container parallax-window" data-parallax="scroll" data-image-src="<?php echo the_field("banner_image"); ?>">
                 <div class="banner-wrapper">
                     <div class="banner-title">
                         <h2><span>Gallery</span></h2>

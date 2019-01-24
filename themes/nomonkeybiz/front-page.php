@@ -8,9 +8,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-		    <section id="hero-img" class="banner-container">
-                <img src="<?php echo the_field("banner_image"); ?>" alt="banner image">
+		    <section id="hero-img" class="banner-container parallax-window" data-parallax="scroll" data-image-src="<?php echo the_field("banner_image"); ?>">
                 <div class="home-banner-content banner-title">
                     <?php while ( have_posts() ) : the_post(); ?>
                         <?php the_content(); ?>
@@ -51,9 +49,7 @@ get_header(); ?>
                         <div class="home-about-info-wrapper"><?php echo the_field('about_description'); ?></div>
                         <a href="<?php the_field('about_link'); ?>">Read More</a>
                     </div>
-                    <div class="about-parallax">
-                        <img src="<?php echo the_field("about_photo"); ?>" alt="about image">
-                    </div>
+                    <div class="about-parallax parallax-window" data-parallax="scroll" data-image-src="<?php echo the_field("about_photo"); ?>">
                 </div>
             </section>
 

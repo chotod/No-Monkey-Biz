@@ -87,6 +87,8 @@ function nmb_starter_scripts() {
 
 	wp_enqueue_script( 'jquery');
 
+	wp_enqueue_script( 'nmb-parallax-js', get_template_directory_uri() . '/build/js/parallax.min.js', array('jquery'), false, true);
+
 	wp_enqueue_script( 'nmb-main-js', get_template_directory_uri() . '/build/js/main.min.js', array('jquery'), false, true);
 
 	wp_enqueue_script( 'nmb-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );

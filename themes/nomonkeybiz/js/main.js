@@ -1,8 +1,6 @@
 (function ($) {
-    bannerParallax();
     servicesScroll();
     headerScroll();
-    aboutParallax();
     fadePhotos();
 
     //Scroll to services section when clicked
@@ -27,23 +25,6 @@
                 $('#masthead').removeClass('fixed-header');
                 $('#masthead').addClass('transparent-header');
                 }
-        });
-    }
-
-    //Front page about-parallax
-    function aboutParallax() {
-        $('.about-parallax').each(function(index, el) {
-            var img = $(el).children('img');
-            $(el).css('background', 'url(' + img.attr('src') + ') 50% 50% / cover fixed');
-            img.remove();
-        });
-    }
-
-    function bannerParallax() {
-        $('.banner-container').each(function(index, el) {
-            var img = $(el).children('img');
-            $(el).css('background', 'linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(' + img.attr('src') + ') 56% 50% / cover fixed');
-            img.remove();
         });
     }
 
