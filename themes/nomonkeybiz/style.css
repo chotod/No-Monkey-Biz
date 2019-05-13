@@ -985,6 +985,16 @@ button#responsive-menu-button {
   -o-animation: fadeIn 5.5s;
   /* Opera */ }
 
+.frontpage-banner-container {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden; }
+  @media only screen and (min-width: 1200px) {
+    .frontpage-banner-container {
+      margin-bottom: 4rem;
+      height: 900px; } }
+
 .home .home-banner-content span {
   border: none;
   padding: 0; }

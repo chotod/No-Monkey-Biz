@@ -8,13 +8,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		    <section id="hero-img" class="banner-container parallax-window" data-parallax="scroll" data-image-src="<?php echo the_field("banner_image"); ?>">
-                <div class="home-banner-content banner-title">
-                    <?php while ( have_posts() ) : the_post(); ?>
-                        <?php the_content(); ?>
-                    <?php endwhile; // End of the loop. ?>
+            <section id="hero-img" class="frontpage-banner-container">
+                <div>
+                    <?php echo do_shortcode("[slide-anything id='302']"); ?>
                 </div>
-                <!-- <i class="fas fa-angle-down services-arrow"></i> -->
             </section>
 
             <section class="home-services-container l-container">

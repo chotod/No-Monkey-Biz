@@ -7,6 +7,17 @@
 	-o-animation: fadeIn 5.5s; /* Opera */
 }
 
+.frontpage-banner-container {
+    width: 100%;
+	background-color: rgba(0,0,0,0.3);
+	position: relative;
+	overflow: hidden;
+	@include media($wide) {
+		margin-bottom: 4rem;
+		height: 900px;
+	}
+}
+
 .home .home-banner-content span {
     border: none;
     padding: 0;
