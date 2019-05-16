@@ -21,9 +21,16 @@
                 $('#masthead').addClass('fixed-header');
                 $('#masthead').removeClass('transparent-header');
             } 
+            else if ($document.scrollTop() > 100) {
+                $('#masthead').addClass('fixed-header-mobile');
+                $('#responsive-menu-button').addClass('fixed-header-mobile');
+                $('body').addClass('body-spacing-mobile');
+            }
             else {
-                $('#masthead').removeClass('fixed-header');
+                $('body').removeClass('body-spacing-mobile');
+                $('#masthead').removeClass('fixed-header fixed-header-mobile');
                 $('#masthead').addClass('transparent-header');
+                $('#responsive-menu-button').removeClass('fixed-header-mobile');
                 }
         });
     }

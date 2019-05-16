@@ -855,7 +855,6 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
   top: 0;
   z-index: 99999; }
   @media only screen and (min-width: 1024px) {
@@ -874,7 +873,8 @@ object {
 @media only screen and (min-width: 1024px) {
   .fixed-header {
     border-bottom: 1px solid #E1E1E1;
-    background: rgba(255, 255, 255, 0.85); }
+    background: rgba(255, 255, 255, 0.85);
+    position: fixed; }
     .fixed-header .site-branding a, .fixed-header .main-navigation .menu a {
       color: #048BD1; }
       .fixed-header .site-branding a:hover, .fixed-header .main-navigation .menu a:hover {
@@ -882,6 +882,14 @@ object {
     .fixed-header .site-branding a {
       width: 80px;
       height: 70px; } }
+
+@media only screen and (max-width: 1024px) {
+  .fixed-header-mobile {
+    position: fixed !important; } }
+
+@media only screen and (max-width: 1024px) {
+  .body-spacing-mobile {
+    margin-top: 70px; } }
 
 .site-branding {
   height: 70px;
